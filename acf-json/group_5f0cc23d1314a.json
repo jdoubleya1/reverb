@@ -1,0 +1,232 @@
+{
+    "key": "group_5f0cc23d1314a",
+    "title": "Clone : Gallery Items",
+    "fields": [
+        {
+            "key": "field_5f0cc23d15620",
+            "label": "Gallery Items",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5f0cc25f3a68f",
+            "label": "Gallery Source",
+            "name": "gallery_source",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "choices": {
+                "custom": "Images",
+                "gallery": "Gallery",
+                "subpages": "Sub Pages",
+                "portfolio": "Portfolio",
+                "menu_items": "Menu Items"
+            },
+            "default_value": "custom",
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "placeholder": "",
+            "acfe_settings": "",
+            "acfe_validate": "",
+            "ajax": 0
+        },
+        {
+            "key": "field_5f0cc3253a690",
+            "label": "Select A Gallery",
+            "name": "select_a_gallery",
+            "type": "relationship",
+            "instructions": "If none are selected, all top level gallery post type items will be shown.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f0cc25f3a68f",
+                        "operator": "==",
+                        "value": "gallery"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "post_type": [
+                "gallery"
+            ],
+            "taxonomy": "",
+            "filters": "",
+            "elements": [
+                "featured_image"
+            ],
+            "min": "",
+            "max": "",
+            "return_format": "object",
+            "acfe_bidirectional": {
+                "acfe_bidirectional_enabled": "0"
+            }
+        },
+        {
+            "key": "field_61ae727ae0b2f",
+            "label": "Select Some Menu Items",
+            "name": "select_menu_items",
+            "type": "relationship",
+            "instructions": "If none are selected, all top level menu post type items will be shown.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f0cc25f3a68f",
+                        "operator": "==",
+                        "value": "menu_items"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "post_type": [
+                "menu"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "elements": [
+                "featured_image"
+            ],
+            "min": "",
+            "max": "",
+            "return_format": "id",
+            "acfe_bidirectional": {
+                "acfe_bidirectional_enabled": "0"
+            },
+            "acfe_settings": "",
+            "acfe_validate": ""
+        },
+        {
+            "key": "field_5f0cc35a3a691",
+            "label": "Select A Portfolio",
+            "name": "select_a_portfolio",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f0cc25f3a68f",
+                        "operator": "==",
+                        "value": "portfolio"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "post_type": [
+                "portfolio"
+            ],
+            "taxonomy": "",
+            "filters": "",
+            "elements": [
+                "featured_image"
+            ],
+            "min": "",
+            "max": "",
+            "return_format": "object",
+            "acfe_bidirectional": {
+                "acfe_bidirectional_enabled": "0"
+            }
+        },
+        {
+            "key": "field_5f0cc3833a693",
+            "label": "Images",
+            "name": "custom_gallery",
+            "type": "gallery",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f0cc25f3a68f",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "insert": "prepend",
+            "library": "all",
+            "min": "",
+            "max": "",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "acfe_display_title": "Gallery Items",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_permissions": "",
+    "acfe_form": 1,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1638822602
+}

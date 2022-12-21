@@ -1,0 +1,116 @@
+{
+    "key": "group_5efb8be958655",
+    "title": "Clone : Form",
+    "fields": [
+        {
+            "key": "field_611d98e9a7626",
+            "label": "Form",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "placement": "top",
+            "endpoint": 0,
+            "choices": {
+                "0": "Select a form",
+                "16": "3 fields",
+                "5": "Companies 3 - Form",
+                "3": "Contacts 6",
+                "8": "Contacts 7",
+                "9": "Contacts 9",
+                "2": "Footer Form",
+                "10": "Forms - 1",
+                "13": "Forms - 10",
+                "14": "Forms - 15",
+                "6": "Forms - 2",
+                "11": "Forms - 3",
+                "12": "Forms - 4",
+                "7": "Hero 8",
+                "23": "Landing Page Footer Form",
+                "22": "Landing Page Hero",
+                "24": "Landing Page Hero (1)",
+                "1": "Subscribe To Newsletter",
+                "4": "Subscribe To Newsletter - 2",
+                "15": "Test Form",
+                "18": "Website Questionnaire"
+            }
+        },
+        {
+            "key": "field_5efb8be95b3f9",
+            "label": "Form",
+            "name": "form",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "choices": {
+                "0": "Select a form",
+                "16": "3 fields",
+                "3": "Contacts 6",
+                "8": "Contacts 7",
+                "9": "Contacts 9",
+                "2": "Footer Form",
+                "10": "Forms - 1",
+                "13": "Forms - 10",
+                "14": "Forms - 15",
+                "6": "Forms - 2",
+                "11": "Forms - 3",
+                "12": "Forms - 4",
+                "7": "Hero 8",
+                "5": "Inline - 3 Fields w\/ placeholders",
+                "22": "Reverb - Landing Page",
+                "30": "Reverb - Plus Website",
+                "29": "Reverb - Standard Website",
+                "1": "Subscribe To Newsletter",
+                "4": "Subscribe To Newsletter - 2"
+            },
+            "default_value": false,
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "placeholder": "",
+            "ajax": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "acfe_display_title": "Form",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_permissions": "",
+    "acfe_form": 1,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1651008008
+}

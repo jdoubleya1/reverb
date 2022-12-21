@@ -1,0 +1,50 @@
+.floating-img {
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.img-cover {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.img-contain {
+  object-fit: contain;
+  width: 100%;
+}
+
+.img-fill {
+  object-fit: fill;
+}
+
+.img-scale {
+  object-fit: scale-down;
+}
+
+.img-center {
+  object-position: center;
+}
+
+.img-top {
+  object-position: top;
+}
+
+.img-right {
+  object-position: right;
+}
+
+.img-left {
+  object-position: left;
+}
+
+.img-bottom {
+  object-position: bottom;
+}

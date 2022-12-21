@@ -1,0 +1,452 @@
+{
+    "key": "group_5b69feff3028d",
+    "title": "Clone : Block Options",
+    "fields": [
+        {
+            "key": "field_5f03c39466ced",
+            "label": "General",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_616668cdc7f07",
+            "label": "Disable Module",
+            "name": "disable_module",
+            "type": "true_false",
+            "instructions": "Hide module on the front-end of the site.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "acfe_settings": "",
+            "acfe_validate": ""
+        },
+        {
+            "key": "field_5fc5b3af92052",
+            "label": "Predefined Theme Skin",
+            "name": "style",
+            "type": "select",
+            "instructions": "Controls the main theme skin to be light or dark. Select a skin and all color options will change to the defined selection.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "choices": {
+                "light": "Light",
+                "dark": "Dark"
+            },
+            "default_value": false,
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "placeholder": "",
+            "acfe_settings": "",
+            "acfe_validate": "",
+            "ajax": 0
+        },
+        {
+            "key": "field_5f03c3a766cee",
+            "label": "Container",
+            "name": "container",
+            "type": "select",
+            "instructions": "Select if the interior content is contained to fixed width or 100% width.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "choices": {
+                "container-fluid": "Full width",
+                "container": "Fixed Width",
+                "container-xl": "Fixed Width on XL Breakpoint and above",
+                "container-lg": "Fixed Width on LG Breakpoint and above",
+                "container-md": "Fixed Width on MD Breakpoint and above",
+                "container-sm": "Fixed Width on SM Breakpoint and above"
+            },
+            "default_value": "container-xl",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "acfe_settings": "",
+            "acfe_validate": "",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_603fca21da7d2",
+            "label": "ID",
+            "name": "unique_id",
+            "type": "unique_id",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "acfe_settings": "",
+            "acfe_validate": ""
+        },
+        {
+            "key": "field_5b69ff103d07e",
+            "label": "CSS Class",
+            "name": "class",
+            "type": "text",
+            "instructions": "Add a class to this block.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "acfe_settings": "",
+            "acfe_validate": ""
+        },
+        {
+            "key": "field_61564e3e7182a",
+            "label": "Inner CSS Class",
+            "name": "inner_css",
+            "type": "text",
+            "instructions": "Add a class to this block's inner content container.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "acfe_settings": "",
+            "acfe_validate": ""
+        },
+        {
+            "key": "field_5ec5937323fe0",
+            "label": "Background",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5eec5f4ca4662",
+            "label": "Background",
+            "name": "background",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hide-label",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "clone": [
+                "group_5b5b6e6263a72"
+            ],
+            "display": "group",
+            "layout": "row",
+            "prefix_label": 0,
+            "prefix_name": 0,
+            "acfe_seamless_style": 1,
+            "acfe_clone_modal": 0,
+            "acfe_settings": ""
+        },
+        {
+            "key": "field_6041314f73e0c",
+            "label": "Shaped Edges",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6041317673e0d",
+            "label": "Message",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hide-label",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "message": "Click the following link to create a shaped border. <a href=\"https:\/\/www.shapedivider.app\/\" target=\"_blank\">https:\/\/www.shapedivider.app\/<\/a>",
+            "new_lines": "wpautop",
+            "esc_html": 0,
+            "acfe_settings": ""
+        },
+        {
+            "key": "field_604131da73e0e",
+            "label": "Top Edge Shape",
+            "name": "top_edge_shape",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "layout": "row",
+            "acfe_seamless_style": 1,
+            "acfe_group_modal": 0,
+            "acfe_settings": "",
+            "sub_fields": [
+                {
+                    "key": "field_6184189151907",
+                    "label": "Show behind content",
+                    "name": "show_behind_content",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "choices": {
+                        "1": "Show behind content"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "acfe_settings": "",
+                    "acfe_validate": "",
+                    "save_custom": 0
+                },
+                {
+                    "key": "field_604131e873e0f",
+                    "label": "HTML",
+                    "name": "html",
+                    "type": "textarea",
+                    "instructions": "Copy and paste the contents of the HTML field.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 5,
+                    "acfe_textarea_code": 1,
+                    "acfe_settings": "",
+                    "acfe_validate": "",
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_6041324473e10",
+                    "label": "CSS",
+                    "name": "css",
+                    "type": "textarea",
+                    "instructions": "Copy and paste the contents of the CSS field.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 5,
+                    "acfe_textarea_code": 1,
+                    "acfe_settings": "",
+                    "acfe_validate": "",
+                    "new_lines": ""
+                }
+            ]
+        },
+        {
+            "key": "field_6041325573e11",
+            "label": "Bottom Edge Shape",
+            "name": "bottom_edge_shape",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "layout": "row",
+            "acfe_seamless_style": 1,
+            "acfe_group_modal": 0,
+            "acfe_settings": "",
+            "sub_fields": [
+                {
+                    "key": "field_6184184151906",
+                    "label": "Show behind content",
+                    "name": "show_behind_content",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "choices": {
+                        "1": "Show behind content"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "acfe_settings": "",
+                    "acfe_validate": "",
+                    "save_custom": 0
+                },
+                {
+                    "key": "field_6041325573e12",
+                    "label": "HTML",
+                    "name": "html",
+                    "type": "textarea",
+                    "instructions": "Copy and paste the contents of the HTML field.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 5,
+                    "acfe_textarea_code": 1,
+                    "acfe_settings": "",
+                    "acfe_validate": "",
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_6041325573e13",
+                    "label": "CSS",
+                    "name": "css",
+                    "type": "textarea",
+                    "instructions": "Copy and paste the contents of the CSS field.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 5,
+                    "acfe_textarea_code": 1,
+                    "acfe_settings": "",
+                    "acfe_validate": "",
+                    "new_lines": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "acfe_display_title": "Block Options",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_permissions": "",
+    "acfe_form": 1,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1637256491
+}

@@ -1,0 +1,74 @@
+/*!
+Theme Name: reverb
+Theme URI: https://reverb.build
+Author: Justin Ward
+Author URI: https://reverb.build
+Description: A wordpress theme by Echo Media Group
+Version: 2.0.0
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 8.0
+License: GNU General Public License v2 or later
+License URI: <https://gnu.org/licenses/gpl-2.0.html>
+Text Domain: reverb
+reverb theme, Copyright 2012 Echo Media Group
+reverb is distrbuted under the terms of the GNU GPL
+*/
+
+// MDBootstrap
+@import 'theme/mdb.pro.scss';
+
+// WPCore.
+@import 'theme/wpcore';
+
+// Dev Tools
+@import 'theme/dev-tools';
+
+// Theme
+@import 'theme/theme';
+@import 'theme/typography';
+@import 'theme/buttons';
+@import 'theme/backgrounds';
+@import 'theme/pagination';
+@import 'theme/list-group';
+@import 'theme/animations';
+@import 'theme/icons';
+@import 'theme/images';
+@import 'theme/footer';
+@import 'theme/forms';
+@import 'theme/header';
+@import 'theme/cards';
+@import 'theme/single';
+@import 'theme/sliders';
+@import 'theme/social-icons';
+@import 'theme/widgets';
+
+// Blocks
+@import 'modules/apps';
+@import 'modules/companies';
+@import 'modules/contacts';
+@import 'modules/content-with-photo';
+@import 'modules/content';
+@import 'modules/covers';
+@import 'modules/call-to-action';
+@import 'modules/features-with-photo';
+@import 'modules/features';
+@import 'modules/food-menus';
+@import 'modules/forms';
+@import 'modules/gallery';
+@import 'modules/grid';
+@import 'modules/headings';
+@import 'modules/hero';
+@import 'modules/portfolio';
+@import 'modules/pricing';
+@import 'modules/products';
+@import 'modules/services';
+@import 'modules/specifications';
+@import 'modules/team';
+@import 'modules/testimonials';
+@import 'modules/text';
+
+// // Modules
+@import 'theme/modules';
+
+@import 'theme/custom/styles';

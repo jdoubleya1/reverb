@@ -1,0 +1,39 @@
+.single {
+	&.single-team {
+		.post-navigation {
+			position: absolute;
+			width: 100%;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+
+			.row {
+				margin-left: -4rem;
+				margin-right: -4rem;
+			}
+
+			.title {
+				display: none;
+			}
+
+			.fa-angle-left,
+			.fa-angle-right {
+				font-size: 2.5rem;
+			}
+
+			.nav-previous,
+			.nav-next {
+				position: absolute;
+				top: 0;
+			}
+
+			.nav-previous {
+				left: 0;
+			}
+
+			.nav-next {
+				right: 0;
+			}
+		}
+	}
+}

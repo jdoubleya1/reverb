@@ -1,0 +1,260 @@
+.rvb-light {
+	background-color: whitesmoke;
+}
+.rvb-title {
+	background-color: #efefef;
+}
+
+button.wp-color-result {
+	margin: 0 !important;
+}
+
+.acf-switch {
+	height: 33px;
+	span {
+		line-height: 24px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.hide-label {
+		&::before {
+			display: none !important;
+		}
+
+		> .acf-label {
+			display: none;
+		}
+
+		> .acf-input {
+			width: 100% !important;
+		}
+	}
+
+	body .acfe-flexible-layout-thumbnail {
+		background-size: contain !important;
+		background-color: #f5f9fc;
+	}
+
+	.acf-flexible-content {
+		.layout {
+			border-color: $light;
+			border-radius: 3px;
+		}
+	}
+
+	.acf-field.acf-field-flexible-content
+		> .acf-input
+		> .acf-flexible-content
+		> .acfe-flexible-stylised-button {
+		border-radius: 3px;
+	}
+
+	.layout > .acfe-fc-placeholder .acfe-fc-overlay {
+		background: $light;
+	}
+
+	body .acf-fields > .acf-tab-wrap {
+		background: $light;
+	}
+
+	// Tabs
+	.acf-field-tab + .acf-field-clone {
+		border: 0 !important;
+		padding: 0 !important;
+
+		&::before {
+			display: none !important;
+		}
+
+		> .acf-input {
+			float: none !important;
+			width: 100% !important;
+			padding: 0 !important;
+
+			> .acf-clone-fields {
+				> .acf-field-group {
+					padding-top: 0 !important;
+
+					> .acf-input {
+						float: none !important;
+						padding: 0 !important;
+						width: 100% !important;
+						min-width: 100% !important;
+					}
+				}
+			}
+		}
+	}
+
+	.acf-tab-wrap.-top {
+		background: $dark !important;
+
+		.acf-tab-group {
+			border: none !important;
+			margin: 0 !important;
+			padding: 0 !important;
+
+			li {
+				margin: 0;
+
+				a {
+					color: #ffffff;
+					background: transparent !important;
+					border: none;
+					padding: 0.75rem 1.5rem;
+
+					&:hover {
+						background: $primary !important;
+					}
+				}
+
+				&.active {
+					a {
+						color: #ffffff;
+						background: $primary !important;
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+
+	.acfe-modal.-open > .acfe-modal-wrapper {
+		border-radius: 3px;
+	}
+
+	body [data-name="blocks"] {
+		.acf-field-5fe42d9437546 {
+			padding: 0 !important;
+		}
+
+		> .acf-input {
+			> .acf-flexible-content {
+				> .values {
+					.acf-flexible-content {
+						> .values {
+							margin-bottom: 0 !important;
+
+							> .layout {
+								border: none;
+							}
+						}
+
+						.acf-fc-layout-handle {
+							position: absolute;
+							z-index: 9;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+							border: none;
+							height: 1px;
+							width: 1px;
+							padding: 0 !important;
+						}
+
+						.acfe-fc-placeholder {
+							.button {
+								left: calc(50% - 30px);
+							}
+						}
+
+						.acf-fc-layout-controls {
+							z-index: 9;
+							left: calc(50% + 23px);
+							top: 50%;
+							transform: translate(-50%, -50%);
+							width: 75px !important;
+
+							.acf-icon {
+								visibility: visible !important;
+								border-radius: 50%;
+								height: 30px;
+								width: 30px;
+								border: 1px solid #ccd0d4;
+								background: #ffffff;
+
+								&::before {
+									line-height: 28px;
+									font-size: 18px;
+									vertical-align: top;
+								}
+
+								&.-plus,
+								&.-duplicate {
+									display: none !important;
+								}
+
+								&:hover {
+									border-color: #0a4b78;
+									color: #0a4b78;
+								}
+							}
+						}
+
+						.acf-fc-layout-order,
+						.acf-fc-layout-title,
+						.acfe-layout-title {
+							display: none;
+						}
+
+						> .acfe-flexible-stylised-button {
+							display: none;
+						}
+
+						&.-empty {
+							> .acfe-flexible-stylised-button {
+								display: block;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	body [data-name="padding"] {
+		.acf-input {
+			.acf-fields {
+				display: flex;
+				flex-wrap: nowrap;
+				width: 100%;
+				justify-content: space-around;
+				align-items: center;
+
+				.acf-field {
+					&::before {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+	body [data-name="background"],
+	body [data-name="top_edge_shape"],
+	body [data-name="bottom_edge_shape"] {
+		&::before {
+			width: 20% !important;
+		}
+
+		&.acf-field {
+			padding: 0 !important;
+		}
+
+		> .acf-label {
+			width: 100% !important;
+			padding: 0.75rem !important;
+		}
+
+		> .acf-input {
+			width: 100% !important;
+			min-width: initial !important;
+			padding: 0 !important;
+
+			button {
+				margin: 0 !important;
+			}
+		}
+	}
+}

@@ -1,0 +1,105 @@
+@media only screen and (min-width: 1200px) {
+  #adminmenuback,
+  #adminmenuwrap,
+  #adminmenu {
+    background: #1d2939;
+    width: 230px;
+  }
+
+  #adminmenu a:hover,
+  #adminmenu a:focus,
+  .folded #adminmenu .wp-submenu-head:hover {
+    box-shadow: none;
+  }
+
+  #adminmenu li.menu-top:hover,
+  #adminmenu li.opensub > a.menu-top,
+  #adminmenu li > a.menu-top:focus {
+    position: relative;
+    background: #1d2939;
+    color: #ffffff;
+  }
+
+  #adminmenu .wp-submenu,
+  .folded #adminmenu a.wp-has-current-submenu:focus + .wp-submenu,
+  .folded #adminmenu .wp-has-current-submenu .wp-submenu {
+    background: #1a2432;
+  }
+
+  #adminmenu {
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    float: none;
+
+    a {
+      color: #adb5bd;
+      font-size: 13px;
+      font-weight: normal;
+    }
+
+    .wp-has-current-submenu {
+      .wp-submenu {
+        min-width: 100% !important;
+      }
+
+      &::after {
+        display: none !important;
+      }
+    }
+
+    .wp-submenu {
+      width: 100% !important;
+      min-width: 230px;
+      left: 220px;
+
+      a {
+        position: relative;
+        padding-left: 35px !important;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 10px;
+          margin-top: -0.5px;
+          width: 5px;
+          height: 1px;
+          background-color: #fff;
+          opacity: 0.5;
+          transform-origin: center;
+          transition: all 0.2s ease-in-out;
+        }
+
+        &:hover,
+        &:focus {
+          box-shadow: none;
+          &::before {
+            width: 15px;
+            opacity: 1;
+            background-color: #17a2b8;
+          }
+        }
+      }
+    }
+
+    .wp-has-current-submenu .wp-submenu {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      background-color: #1a2432;
+      border-bottom-right-radius: 3px;
+      border-bottom-left-radius: 3px;
+    }
+  }
+
+  #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,
+  #adminmenu li.current a.menu-top,
+  .folded #adminmenu li.wp-has-current-submenu,
+  .folded #adminmenu li.current.menu-top,
+  #adminmenu .wp-menu-arrow,
+  #adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head,
+  #adminmenu .wp-menu-arrow div {
+    background-image: linear-gradient(to right, #1caf9a 0%, #17a2b8 100%);
+    background-repeat: repeat-x;
+    color: #fff;
+  }
+}

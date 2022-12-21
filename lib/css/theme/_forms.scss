@@ -1,0 +1,157 @@
+.rvb-inline-form {
+  @extend .row;
+  @extend .row-cols-lg-2;
+  @extend .g-0;
+  @extend .w-100;
+
+  @include media-breakpoint-down(md) {
+    display: block !important;
+  }
+
+  .gform_body {
+    @extend .col;
+
+    .gform_fields {
+      @extend .row;
+      @extend .g-0;
+
+      @include media-breakpoint-down(lg) {
+        flex-direction: column;
+      }
+
+      .gfield {
+        @extend .col;
+
+        @include media-breakpoint-down(lg) {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+      }
+    }
+  }
+
+  .gform_footer {
+    @extend .col-auto;
+    @extend .p-0;
+    @extend .m-0;
+
+    input[type='submit'] {
+      @extend .btn-lg;
+    }
+
+    @include media-breakpoint-down(lg) {
+      margin-top: 0.75rem !important;
+    }
+
+    &.top_label {
+      .gform_button {
+        margin-bottom: 0 !important;
+        height: 47.75px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+  }
+}
+
+.rvb-inline-form_wrapper {
+  @extend .m-0;
+}
+
+.rvb-inline-fields {
+  .gform_fields {
+    display: flex !important;
+
+    .gfield {
+      grid-column: initial;
+      @extend .col;
+
+      @include media-breakpoint-up(lg) {
+        padding-left: 0 !important;
+        margin-top: 0 !important;
+      }
+    }
+  }
+
+  .gform_body {
+    width: initial !important;
+  }
+
+  .gform_button {
+    @extend .me-0;
+  }
+
+  .gform_footer {
+    width: initial !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    align-items: flex-end;
+
+    input {
+      margin: 0;
+    }
+  }
+}
+
+input:not([type='radio']):not([type='checkbox']):not([type='submit']):not([type='button']):not([type='image']):not([type='file']),
+textarea {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.15rem;
+  font-size: 0.85rem !important;
+  padding: 0.75rem 0.95rem !important;
+  margin-top: 0 !important;
+}
+
+textarea.small {
+  height: 130px !important;
+}
+
+::-webkit-input-placeholder {
+  color: $dark;
+  font-weight: normal;
+}
+
+.gf_progressbar_title {
+  font-size: 1.2rem !important;
+  font-weight: bold !important;
+  color: $primary !important;
+  margin: 0 auto 1.25rem !important;
+  padding-bottom: 1.25rem !important;
+  text-align: center !important;
+}
+
+.gf_progressbar_wrapper {
+  margin-bottom: 1.25rem;
+}
+
+.fancy-radio {
+  .gfield_radio {
+    @extend .row;
+    @extend .row-cols-2;
+
+    .gchoice {
+      @extend .col;
+      @extend .d-flex;
+      @extend .align-items-center;
+      @extend .justify-content-start;
+    }
+  }
+}
+
+.gform_submission_error {
+  font-size: 1rem !important;
+}
+
+.gform_page_footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gform_page {
+  input[type='submit'] {
+    @extend .btn;
+    @extend .btn-primary;
+    @extend .btn-lg;
+  }
+}

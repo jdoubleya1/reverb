@@ -1,0 +1,15 @@
+.rvb-button-prev,
+.rvb-button-next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 5;
+}
+
+.rvb-button-prev {
+	left: 0;
+}
+
+.rvb-button-next {
+	right: 0;
+}

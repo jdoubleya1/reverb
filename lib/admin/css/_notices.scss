@@ -1,0 +1,14 @@
+@media only screen and (min-width: 1200px) {
+  .wrap .notice,
+  .wrap div.updated,
+  .wrap div.error,
+  .media-upload-form .notice,
+  .media-upload-form div.error {
+    margin: 5px 0 15px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
+    position: relative;
+    padding: 1rem;
+  }
+}

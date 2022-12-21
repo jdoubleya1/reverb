@@ -1,0 +1,344 @@
+.forms_1,
+.forms_2,
+.forms_3 {
+  .gform_button {
+    @extend .w-100;
+  }
+}
+
+/**
+ * Forms 1
+ **/
+.forms_1 {
+  .col-left {
+    @include media-breakpoint-up(lg) {
+      width: 400px;
+    }
+  }
+
+  .img-container {
+    max-height: 420px;
+  }
+}
+
+/**
+ * Forms 2
+ **/
+.forms_2 {
+  .accent-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+  }
+}
+
+.forms_3 {
+  .img-container {
+    height: 135px;
+    margin-left: -10px;
+  }
+
+  .gform_footer {
+    margin-top: 0 !important;
+    @extend .pt-2;
+  }
+
+  .gfield {
+    @include media-breakpoint-up(lg) {
+      padding-right: 0 !important;
+    }
+  }
+}
+
+/**
+ * Forms 4
+ **/
+.forms_4 {
+  .social-icons {
+    li {
+      @extend .ms-2;
+    }
+  }
+
+  .gform_footer {
+    margin-top: 0 !important;
+  }
+}
+
+/**
+ * Forms 5
+ **/
+.forms_5 {
+  .gform_footer {
+    margin-top: 0 !important;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+/**
+ * Forms 6
+ **/
+.forms_6 {
+  .gform_footer {
+    margin-top: 0 !important;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .gform_legacy_markup_wrapper {
+    margin: 0 !important;
+  }
+}
+
+/**
+ * Forms 7
+ **/
+.forms_7 {
+  .gform_footer {
+    margin-top: 0 !important;
+  }
+}
+
+/**
+ * Forms 9
+ **/
+.forms_9 {
+  form {
+    * {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+
+/**
+ * Forms 16
+ **/
+.forms_16 {
+  .container {
+    position: initial !important;
+  }
+
+  .row {
+    position: relative;
+    z-index: 9;
+  }
+
+  .custom-shape-divider-bottom-1614882679 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 4;
+  }
+
+  .custom-shape-divider-bottom-1614882679 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 177px;
+    transform: rotateY(180deg);
+  }
+
+  .custom-shape-divider-bottom-1614882679 .shape-fill {
+    fill: #ffffff;
+  }
+}
+
+/**
+ * Forms 18
+ **/
+.forms_18 {
+  .gform_footer {
+    text-align: left !important;
+  }
+
+  .mdfgf-submit {
+    max-width: 50%;
+    margin: 0;
+  }
+}
+
+/**
+ * Forms 19
+ **/
+.forms_19 {
+  .container {
+    position: initial !important;
+
+    img {
+      max-width: initial;
+      width: 100%;
+    }
+  }
+
+  img {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+  }
+
+  .floating-image {
+    position: relative;
+
+    @include media-breakpoint-up(lg) {
+      position: absolute;
+    }
+  }
+
+  .gform_footer {
+    @extend .mt-4;
+  }
+
+  .w-lg-50 {
+    @extend .mt-4;
+    position: absolute;
+    top: calc(100% - 75px);
+    right: 0;
+    width: 50%;
+  }
+}
+
+/**
+ * Forms 21
+ **/
+.forms_21 {
+  .form-excerpt {
+    @extend .order-2;
+  }
+}
+
+/**
+ * Forms 22
+ **/
+.forms_22 {
+  .mdfgf-submit,
+  .button {
+    @extend .w-100;
+  }
+
+  .form-excerpt {
+    max-width: 50%;
+  }
+
+  .btn,
+  .btn-link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 50%;
+    @extend .mt-3;
+    @extend .mb-sm-5;
+    @extend .me-sm-5;
+  }
+}
+
+.forms_24 {
+  .img-container {
+    height: 360px;
+  }
+}
+
+.forms_4,
+.forms_5,
+.forms_6,
+.forms_7,
+.forms_9,
+.forms_10,
+.forms_11,
+.forms_14,
+.forms_15,
+.forms_20,
+.forms_21,
+.forms_24,
+.forms_25,
+.forms_26,
+.forms_27,
+.forms_28,
+.forms_30 {
+  form {
+    @extend .row;
+    @extend .g-0;
+
+    .gform_body {
+      @extend .col;
+    }
+
+    .gform_footer {
+      @extend .col-auto;
+    }
+  }
+}
+
+.forms_10,
+.forms_14,
+.forms_15,
+.forms_20,
+.forms_21,
+.forms_24,
+.forms_25,
+.forms_26,
+.forms_30 {
+  .gform_fields {
+    @extend .row;
+
+    > * {
+      @extend .col;
+      @extend .pe-lg-3;
+    }
+  }
+}
+
+.forms_15,
+.forms_16,
+.forms_17,
+.forms_21,
+.forms_22,
+.forms_23,
+.forms_25,
+.forms_30 {
+  .form-container {
+    @extend .d-flex;
+    @extend .flex-column;
+  }
+}
+
+.forms_17,
+.forms_22,
+.forms_23,
+.forms_29 {
+  .mdfgf-submit,
+  .button {
+    @extend .w-100;
+  }
+
+  form {
+    .button {
+      @extend .mt-2;
+    }
+  }
+}
+
+.forms_16,
+.forms_19 {
+  .mdfgf-container .mdfgf-button {
+    @extend .w-100;
+  }
+  .mdfgf-theme-greyish .button {
+    @extend .bg-primary;
+    @extend .btn-block;
+    @extend .w-100;
+    @extend .btn-lg;
+    min-height: 50px;
+  }
+}

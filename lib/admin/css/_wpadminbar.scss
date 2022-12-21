@@ -1,0 +1,87 @@
+@media only screen and (min-width: 1200px) {
+	body #wpadminbar {
+		height: 60px;
+		background: #1d2939 !important;
+		box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.16);
+		transition: all 0.2s ease-in-out;
+
+		.quicklinks {
+			> ul {
+				> li {
+					height: 60px;
+					border-right: 1px solid rgba(255, 255, 255, 0.1);
+
+					a.ab-item {
+						height: 60px;
+						line-height: 60px;
+						color: #ffffff;
+
+						.svg,
+						&::before,
+						.ab-icon {
+							position: relative;
+							top: 14px !important;
+						}
+					}
+				}
+			}
+
+			.ab-icon:before,
+			.ab-item:before,
+			#adminbarsearch:before {
+				color: $primary;
+			}
+		}
+
+		.ab-empty-item,
+		a.ab-item,
+		> #wp-toolbar span.ab-label,
+		> #wp-toolbar span.noticon {
+			color: #6c757d !important;
+		}
+
+		.yoast-issue-counter {
+			border-radius: 50%;
+			position: absolute;
+			top: 20px;
+			left: 24px;
+			height: 7px;
+			width: 7px;
+			overflow: hidden;
+			padding: 0 !important;
+		}
+
+		#wp-admin-bar-my-account.with-avatar {
+			> .ab-empty-item img,
+			> a img {
+				height: 40px;
+				border: none;
+				border-radius: 50%;
+			}
+
+			a {
+				span {
+					font-weight: bold;
+					color: $primary;
+				}
+			}
+		}
+
+		&:not(.mobile) .ab-top-menu > li > .ab-item:focus,
+		&.nojq .quicklinks .ab-top-menu > li > .ab-item:focus,
+		&:not(.mobile) .ab-top-menu > li:hover > .ab-item,
+		.ab-top-menu > li.hover > .ab-item {
+			background: $light;
+		}
+	}
+
+	#wp-admin-bar-menu-site-logo {
+		background: #1d2939 !important;
+
+		&:hover {
+			a {
+				background: #1d2939 !important;
+			}
+		}
+	}
+}

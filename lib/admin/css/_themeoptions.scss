@@ -1,0 +1,435 @@
+/**
+ * Reverb options page styling
+**/
+
+@media only screen and (min-width: 1200px) {
+  #acf-group_5937796cc843f {
+    padding: 0 !important;
+  }
+
+  body.toplevel_page_theme-options {
+    #postbox-container-2 {
+      .postbox-header {
+        display: none;
+      }
+    }
+
+    .postbox-header {
+      display: none !important;
+    }
+
+    .acf-postbox {
+      border: none;
+      box-shadow: none;
+      border-radius: 0.3em;
+      overflow: hidden;
+      padding: 0 !important;
+
+      > .acf-fields.-left {
+        > .acf-field {
+          &::before {
+            width: 30% !important;
+          }
+
+          > .acf-label {
+            width: 30%;
+          }
+          > .acf-input {
+            width: 70%;
+          }
+        }
+      }
+
+      // theme options sidebar
+      .acf-fields.-sidebar.-left {
+        padding: 0 0 0 160px !important;
+
+        &:before {
+          width: 160px;
+          background-color: #23282d;
+        }
+
+        > .acf-tab-wrap.-left {
+          .acf-tab-group {
+            width: 160px;
+
+            li {
+              a {
+                color: #ffffff;
+                border: none;
+
+                &:hover {
+                  color: #ffffff;
+                  background: #313131;
+                }
+              }
+
+              &.active {
+                a {
+                  color: #fff;
+                  font-weight: bold;
+                  background: $gradient;
+                }
+              }
+            }
+          }
+        }
+
+        // Group field styling
+        > .acf-field-group {
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+
+          &.hide-label {
+            // > .acf-label {
+            // 	display: none !important;
+            // }
+
+            &::before {
+              display: none;
+            }
+          }
+
+          > .acf-label {
+            float: none !important;
+            width: 100% !important;
+            display: block !important;
+            margin: 0 !important;
+            padding: 1rem !important;
+            background-color: #f9f9f9;
+            border-bottom: 1px solid #f0f0f0;
+
+            label {
+              font-size: 1.1rem;
+              font-weight: bold;
+              line-height: 1;
+              padding: 0.75em;
+              margin: 0;
+            }
+          }
+
+          > .acf-input {
+            margin: 0 !important;
+            padding: 0 !important;
+            float: none !important;
+            width: 100% !important;
+
+            > .acf-fields.-left {
+              > .acf-field:not(.acf-field-message):not(.acf-field-clone) {
+                padding: 0 !important;
+
+                > .acf-label,
+                > .acf-input {
+                  padding: 1.5rem;
+                }
+              }
+
+              .acf-field {
+                &.hide-label {
+                  &::before {
+                    display: none;
+                  }
+
+                  .acf-input {
+                    width: 100%;
+                  }
+                }
+              }
+
+              // color picker field in group
+              .acf-field-color-picker {
+                &::before {
+                  width: 30%;
+                }
+
+                .acf-label {
+                  width: 30%;
+                }
+
+                .acf-input {
+                  width: 70%;
+                  padding: 1.5rem !important;
+
+                  button {
+                    margin: 0 !important;
+                  }
+                }
+              }
+
+              .acf-tab-wrap {
+                background: $gradient;
+
+                .acf-tab-group {
+                  border: none;
+                  margin: 0;
+                  padding: 0;
+
+                  li {
+                    margin: 0;
+
+                    a {
+                      color: #ffffff;
+                      background: transparent;
+                      border: none;
+                      padding: 0.75rem 1.5rem;
+
+                      &:hover {
+                        background: rgba(0, 0, 0, 0.1);
+                      }
+                    }
+
+                    &.active {
+                      a {
+                        color: #ffffff;
+                        background: rgba(0, 0, 0, 0.1);
+                        margin: 0;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .accordion {
+                &::before {
+                  width: 30% !important;
+                }
+                > .acf-label {
+                  width: 30% !important;
+                  padding: 1.5rem !important;
+                }
+                > .acf-input {
+                  width: 70% !important;
+                  max-width: 70% !important;
+                  min-width: 70% !important;
+                  padding: 1.5rem !important;
+                  margin: 0 !important;
+
+                  > .acf-fields {
+                    > .acf-field {
+                      padding: 0 !important;
+
+                      &::before {
+                        display: none;
+                      }
+
+                      > .acf-label {
+                        display: none !important;
+                      }
+                      > .acf-input {
+                        width: 100% !important;
+
+                        .acf-accordion-content {
+                          .acf-field-repeater {
+                            .acf-label {
+                              width: 30% !important;
+                            }
+                            .acf-input {
+                              width: 70% !important;
+                              min-width: 70% !important;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              // footer background accordion
+              .acf-field-5eec5f4ca4662 {
+                > .acf-label {
+                  display: none;
+                }
+
+                > .acf-input {
+                  min-width: 100% !important;
+                  width: 100% !important;
+                  margin: 0 !important;
+                  padding: 1.5rem !important;
+
+                  .acf-clone-fields {
+                    > .acf-field {
+                      > .acf-label {
+                        display: none;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .acf-field-group {
+                &::before {
+                  width: 30% !important;
+                }
+
+                > .acf-label {
+                  font-size: 1.1rem;
+                  background: #f9f9f9;
+                  border-bottom: 1px solid #f0f0f0;
+                  width: 100%;
+                }
+
+                .acf-input {
+                  padding: 0 !important;
+                  width: 100% !important;
+                  margin-top: 0;
+
+                  .acf-fields.-left {
+                    .acf-field {
+                      &::before {
+                        width: 30% !important;
+                      }
+                      > .acf-label:not(.acf-accordion-title) {
+                        width: 30% !important;
+                        padding: 1.5rem;
+                      }
+                      > .acf-input:not(.acf-accordion-content) {
+                        width: 70% !important;
+                        padding: 1.5rem !important;
+                        min-width: initial !important;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .acf-field-clone:not(.accordion):not(.acf-field-5eec5f4ca4662) {
+                padding: 0 !important;
+
+                > .acf-input {
+                  padding: 0 !important;
+                  min-width: calc(100% + 3rem);
+                  margin: -1.5rem -1.5rem !important;
+                }
+              }
+
+              .acf-field-repeater {
+                > .acf-input {
+                  width: 100% !important;
+                  min-width: 100% !important;
+                }
+              }
+
+              .acf-field-button-group,
+              .acf-field-true-false,
+              .acf-field-unique-id,
+              .acf-field-text,
+              .acf-field-select,
+              .acf-field-5ec562be2b170,
+              .acf-field-5eec175dec308,
+              .acf-field-5ec563b02b175 {
+                &::before {
+                  width: 30%;
+                }
+                > .acf-label {
+                  width: 30% !important;
+                }
+                > .acf-input {
+                  width: 70% !important;
+                }
+              }
+
+              // Padding and margin fields
+              .acf-field-5ec562be2b170,
+              .acf-field-5eec175dec308,
+              .acf-field-5ec563b02b175 {
+                > .acf-label {
+                  border-bottom: none !important;
+                }
+                > .acf-input {
+                  > .acf-fields {
+                    display: flex !important;
+
+                    .acf-field-select {
+                      display: flex;
+                      flex-wrap: wrap;
+                      width: 25% !important;
+
+                      &::before {
+                        display: none;
+                      }
+
+                      .acf-label {
+                        width: 100% !important;
+                        padding-left: 1.5rem !important;
+                        padding-bottom: 0 !important;
+                        margin-top: -1rem;
+                      }
+
+                      .acf-input {
+                        min-width: 100% !important;
+                        margin-top: -1rem;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .fix-30-70 {
+          > .acf-input {
+            .acf-field-group {
+              > .acf-label {
+                width: 30% !important;
+
+                label {
+                  font-size: 13px !important;
+                }
+              }
+              > .acf-input {
+                max-width: 70% !important;
+
+                > .acf-fields {
+                  padding: 1.5rem !important;
+
+                  .acf-accordion-title {
+                    padding: 1.5rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .acf-accordion-title {
+          min-width: 100% !important;
+        }
+
+        // ACF Message
+        .acf-field-message {
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+          background: #f9f9f9;
+
+          &:before {
+            display: none !important;
+          }
+
+          > * {
+            float: none !important;
+            width: 100% !important;
+            padding: 1rem 1rem 0 !important;
+          }
+
+          > .acf-label {
+            padding: 1.5rem 1.5rem 0 1.5rem !important;
+
+            label {
+              font-size: 1.1rem;
+              font-weight: bold;
+              line-height: 1;
+              padding: 0;
+              margin: 0;
+            }
+          }
+
+          > .acf-input {
+            padding: 0.5rem 1.5rem 1.5rem 1.5rem !important;
+          }
+        }
+      }
+    }
+  }
+}

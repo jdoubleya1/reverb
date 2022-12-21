@@ -1,0 +1,24 @@
+@media only screen and (min-width: 1200px) {
+  input[type='text'],
+  input[type='password'],
+  input[type='date'],
+  input[type='datetime'],
+  input[type='datetime-local'],
+  input[type='email'],
+  input[type='month'],
+  input[type='number'],
+  input[type='search'],
+  input[type='tel'],
+  input[type='time'],
+  input[type='url'],
+  input[type='week'] {
+    background-color: $light;
+    border: none;
+    height: 35px;
+    border-radius: 3px;
+  }
+
+  p.search-box {
+    margin: 0 -8px 1rem;
+  }
+}

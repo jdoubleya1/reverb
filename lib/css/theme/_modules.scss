@@ -1,0 +1,48 @@
+.module {
+  @extend .position-relative;
+  @extend .overflow-hidden;
+}
+
+.module-bg {
+  &:not(.position-relative) {
+    @extend .position-absolute;
+  }
+  @extend .top-0;
+  @extend .left-0;
+  @extend .w-100;
+  @extend .h-100;
+
+  &.bg-image {
+    @extend .z-index-2;
+  }
+
+  &.bg-gradient {
+    @extend .z-index-3;
+  }
+
+  &.bg-color {
+    @extend .z-index-1;
+  }
+
+  &.bg-video {
+    @extend .z-index-3;
+    @extend .overflow-hidden;
+
+    video {
+      @extend .position-absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-height: 100%;
+      min-width: 100%;
+    }
+  }
+
+  &.edge-shape {
+    @extend .h-auto;
+
+    &.bottom {
+      bottom: 0;
+    }
+  }
+}

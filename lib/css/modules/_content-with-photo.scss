@@ -1,0 +1,54 @@
+.content_with_photo_1 {
+	.floating-img {
+		@include media-breakpoint-down(lg) {
+			position: relative;
+			height: 350px;
+			min-height: 50vh;
+		}
+	}
+}
+
+.content_with_photo_2 {
+	@include media-breakpoint-up(lg) {
+		.inner,
+		.floating-img {
+			min-height: 600px;
+		}
+
+		.container {
+			> .row {
+				min-height: 600px;
+			}
+		}
+	}
+}
+
+.content_with_photo_5 {
+	.img-container {
+		min-height: 500px;
+	}
+}
+
+.content_with_photo_7 {
+	.icon {
+		width: 50px;
+		height: 50px;
+	}
+
+	.swiper-slide {
+		.inner {
+			height: 500px;
+		}
+	}
+}
+
+.content_with_photo_12 {
+	.grid-item {
+		height: 250px;
+		img {
+			@extend .img-cover;
+			height: 100%;
+			width: 100%;
+		}
+	}
+}

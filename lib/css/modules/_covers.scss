@@ -1,0 +1,139 @@
+.cover_2 {
+  .swiper-pagination {
+    position: relative !important;
+    top: -1px;
+  }
+
+  .swiper-pagination-bullet {
+    position: relative;
+    opacity: 1;
+
+    &:before {
+      content: '';
+      @extend .d-block;
+      @extend .w-100;
+      @extend .bg-primary;
+      @extend .position-absolute;
+      @extend .top-0;
+      @extend .left-0;
+      transform: scaleY(0);
+      transform-origin: top;
+      height: 4px;
+      transition: all 200ms linear;
+    }
+
+    &:hover {
+      @extend .text-primary;
+    }
+
+    &.swiper-pagination-bullet-active {
+      @extend .text-primary;
+
+      &:before {
+        transform: scaleY(1);
+      }
+    }
+  }
+
+  .border-top {
+    border-top: 1px solid $primary !important;
+  }
+}
+
+.cover_3 {
+  .inner {
+    z-index: 10 !important;
+  }
+}
+
+.cover_4 {
+  .swiper-slide {
+    min-height: calc(100vh - 53px);
+
+    @include media-breakpoint-up(lg) {
+      min-height: 580px;
+    }
+  }
+
+  .rvb-button-prev {
+    @include media-breakpoint-up(lg) {
+      left: 4.33337vw !important;
+    }
+  }
+
+  .rvb-button-next {
+    @include media-breakpoint-up(lg) {
+      right: 4.33337vw !important;
+    }
+  }
+
+  .rvb-button-prev,
+  .rvb-button-next {
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+  }
+}
+
+.cover_5 {
+  .content-inner {
+    margin-top: 350px;
+  }
+
+  .img-container,
+  .bg-image {
+    height: 500px !important;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+  }
+}
+
+.cover_6 {
+  .card-header {
+    width: 60px;
+  }
+}
+
+.cover_7 {
+  .bg-image,
+  .bg-color {
+    height: 580px !important;
+  }
+
+  .img-container {
+    max-height: 510px;
+  }
+}
+
+.cover_8 {
+  .img-container {
+    height: 200px;
+
+    @include media-breakpoint-up(lg) {
+      height: 75%;
+    }
+  }
+}
+
+.cover_9 {
+  .rvb-button-prev {
+    @include media-breakpoint-up(lg) {
+      left: 4.33337vw !important;
+    }
+  }
+
+  .rvb-button-next {
+    @include media-breakpoint-up(lg) {
+      right: 4.33337vw !important;
+    }
+  }
+}
+
+.cover_11,
+.cover_17 {
+  .bg-image,
+  .bg-color {
+    height: 450px !important;
+  }
+}

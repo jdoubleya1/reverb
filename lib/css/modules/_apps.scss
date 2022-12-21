@@ -1,0 +1,21 @@
+.apps_8 {
+  overflow: visible !important;
+
+  .img-container {
+    @include media-breakpoint-up(lg) {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+  }
+
+  .bg-accent {
+    height: 85%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+}

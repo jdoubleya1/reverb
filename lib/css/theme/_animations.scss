@@ -1,0 +1,33 @@
+.gs_reveal {
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0s;
+}
+
+.img-anim {
+  overflow: hidden;
+  position: relative;
+
+  img {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    vertical-align: bottom;
+    max-width: 100%;
+    z-index: 1;
+    transition: 1000ms;
+    transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.gs_img_reveal {
+  clip-path: polygon(-10% -10%, -10% -10%, -10% 110%, -10% 110%);
+}

@@ -1,0 +1,20 @@
+@media only screen and (min-width: 1200px) {
+  #doaction,
+  #doaction2,
+  #post-query-submit,
+  .wrap .add-new-h2,
+  .wrap .add-new-h2:active,
+  .wrap .page-title-action,
+  .wrap .page-title-action:active,
+  .wp-core-ui .button,
+  .wp-core-ui .button-secondary {
+    margin: 0 8px 0 0;
+    height: 35px;
+    line-height: 35px;
+    color: $primary;
+    border-color: $primary;
+    background: transparent;
+    border-radius: 3px;
+    font-weight: normal;
+  }
+}

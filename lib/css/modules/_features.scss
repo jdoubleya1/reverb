@@ -1,0 +1,18 @@
+.features_6,
+.features_7 {
+	.feature:nth-child(odd) {
+		@extend .pe-lg-7;
+
+		@include media-breakpoint-down(lg) {
+			border-bottom: 1px solid $gray-400;
+		}
+
+		@include media-breakpoint-up(md) {
+			border-right: 1px solid $gray-400;
+		}
+	}
+
+	.feature:nth-child(even) {
+		@extend .ps-lg-7;
+	}
+}

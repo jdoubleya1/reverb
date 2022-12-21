@@ -1,0 +1,47 @@
+@media only screen and (min-width: 1200px) {
+  .striped > tbody > :nth-child(odd),
+  ul.striped > :nth-child(odd),
+  .alternate {
+    background-color: $light;
+  }
+
+  .wp-list-table {
+    border: 1px solid #ced4da !important;
+    border-radius: 3px !important;
+    box-shadow: none !important;
+
+    a {
+      color: $dark !important;
+    }
+  }
+
+  .tablenav {
+    margin: 0 0 30px;
+
+    .actions {
+      select {
+        background: $light;
+        border: none;
+        height: 35px;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+    }
+
+    .tablenav-pages .current-page {
+      height: 35px;
+      top: 3px;
+      position: relative;
+      line-height: 35px;
+    }
+  }
+
+  th.sortable a span,
+  th.sorted a span {
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $dark;
+    letter-spacing: 0.5px;
+  }
+}

@@ -1,0 +1,25 @@
+.widget {
+	@extend .mb-4;
+
+	.widget-title {
+		@extend .h5;
+	}
+
+	&.site-info {
+		@extend .bg-light;
+		@extend .p-4;
+	}
+
+	&.reverb-menu {
+		ul {
+			border-radius: 0;
+			border: none;
+
+			> li {
+				@extend .bg-light;
+				@extend .border-0;
+				@extend .mb-1;
+			}
+		}
+	}
+}

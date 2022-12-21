@@ -1,0 +1,151 @@
+.module-grid {
+  .reverb-read-more-link {
+    display: none;
+  }
+
+  img {
+    @extend .card-img;
+  }
+}
+
+.grid_1 {
+  .img-container {
+    height: 200px;
+  }
+}
+
+.grid_2 {
+  .img-container {
+    height: 200px;
+  }
+}
+
+.grid_3 {
+  .img-container {
+    height: 280px;
+  }
+}
+
+.grid_4 {
+  .img-container {
+    height: 220px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    .swiper-button-prev {
+      left: -4.333337vw;
+    }
+    .swiper-button-next {
+      right: -4.333337vw;
+    }
+  }
+}
+
+.grid_5 {
+  .img-container {
+    height: 260px;
+  }
+}
+
+.grid_6 {
+  .img-container {
+    height: 260px;
+  }
+
+  .excerpt {
+    @extend .d-none;
+  }
+}
+
+.grid_7 {
+  .img-container {
+    height: 260px;
+  }
+}
+
+.grid_8 {
+  .img-container {
+    height: 580px;
+  }
+}
+
+.grid_9 {
+  .img-container {
+    height: 270px;
+  }
+}
+
+.grid_11 {
+  .mask {
+    @extend .rounded;
+    z-index: 5;
+    opacity: 1 !important;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 30%
+    ) !important;
+    transition: all 1000ms ease !important;
+
+    &:hover {
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0) 60%
+      ) !important;
+    }
+  }
+
+  .swiper-slide {
+    @include media-breakpoint-down(lg) {
+      width: 275px;
+    }
+  }
+
+  .card {
+    height: 325px !important;
+  }
+}
+
+.grid_12 {
+  .col {
+    height: 435px;
+    cursor: pointer !important;
+  }
+
+  a {
+    cursor: pointer !important;
+  }
+
+  .mask {
+    cursor: pointer !important;
+
+    @extend .rounded;
+    z-index: 5;
+    opacity: 1 !important;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 30%
+    ) !important;
+    transition: all 1000ms ease !important;
+
+    &:hover {
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0) 60%
+      ) !important;
+    }
+  }
+
+  .swiper-slide {
+    @include media-breakpoint-down(lg) {
+      width: 275px;
+    }
+  }
+
+  .card {
+    height: 430px !important;
+  }
+}

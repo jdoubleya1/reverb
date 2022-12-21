@@ -1,0 +1,66 @@
+{
+    "key": "group_5edfd2f7f4208",
+    "title": "Clone : Text Style",
+    "fields": [
+        {
+            "key": "field_5edfd2f808948",
+            "label": "Text Style",
+            "name": "text_style",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "choices": {
+                "text-light": "Light",
+                "text-dark": "Dark",
+                "text-primary": "Primary",
+                "text-secondary": "Secondary",
+                "text-success": "Success",
+                "text-danger": "Danger",
+                "text-warning": "Warning",
+                "text-info": "Info",
+                "text-muted": "Muted",
+                "text-white": "White"
+            },
+            "default_value": false,
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "placeholder": "",
+            "ajax": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "acfe_display_title": "Text Style",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_permissions": "",
+    "acfe_form": 1,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1616543850
+}

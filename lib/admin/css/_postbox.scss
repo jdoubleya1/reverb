@@ -1,0 +1,59 @@
+@media only screen and (min-width: 1200px) {
+  #dashboard-widgets .postbox .inside {
+    padding: 30px;
+  }
+
+  .postbox,
+  #posts-filter,
+  #screen-meta,
+  #post-body-content > .wp-editor-expand {
+    background: #ffffff !important;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.21) !important;
+    border: none !important;
+    border-radius: 3px !important;
+    position: relative !important;
+    padding: 4vw !important;
+  }
+
+  .postbox-container {
+    .meta-box-sortables {
+      .postbox {
+        padding: 0 !important;
+      }
+    }
+  }
+
+  #post-body-content > .wp-editor-expand {
+    margin: 4vw 0 1.5vw;
+
+    #wp-content-editor-tools {
+      background: transparent;
+      padding-top: 0;
+    }
+  }
+
+  #posts-filter {
+    margin-top: 4vw;
+  }
+
+  #screen-meta {
+    padding: 2vw;
+    margin: 0;
+  }
+
+  .postbox-header {
+    padding: 10px 20px;
+    border-color: #dee2e6;
+  }
+
+  .subsubsub a {
+    color: #343a40;
+    font-weight: bold;
+  }
+
+  #screen-options-wrap h5,
+  #screen-options-wrap legend,
+  #contextual-help-wrap h5 {
+    color: #343a40;
+  }
+}

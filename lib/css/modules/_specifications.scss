@@ -1,0 +1,12 @@
+.specifications_3 {
+	img {
+		max-width: 75% !important;
+	}
+}
+
+.specifications_9 {
+	li:nth-child(2) {
+		border-left: 1px solid $gray-300;
+		border-right: 1px solid $gray-300;
+	}
+}

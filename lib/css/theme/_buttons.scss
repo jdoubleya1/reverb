@@ -1,0 +1,14 @@
+.gform_previous_button,
+.gform_next_button {
+  @extend .btn;
+  @extend .btn-primary;
+  @extend .btn-lg;
+}
+
+.btn-floating {
+  line-height: $btn-floating-height;
+
+  &.btn-lg {
+    line-height: $btn-floating-height-lg;
+  }
+}

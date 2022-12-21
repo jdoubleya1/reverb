@@ -1,0 +1,60 @@
+.list-group {
+  li {
+    @extend .list-group-item;
+
+    &.active {
+      a {
+        @extend .text-light;
+      }
+    }
+  }
+
+  .children {
+    @extend .ps-0;
+    @extend .m-0;
+    @extend .list-group;
+    @extend .list-group-flush;
+  }
+}
+
+.fa-ul {
+  &.list-group-flush,
+  &.row {
+    @extend .ms-0;
+    pointer-events: none;
+
+    li {
+      padding-left: 2em;
+      background: none;
+
+      .fa-li {
+        left: 0;
+      }
+
+      p {
+        @extend .mb-0;
+      }
+    }
+  }
+}
+
+ul.icon-list {
+  @extend .list-unstyled;
+  @extend .p-0;
+  @extend .m-0;
+
+  li {
+    svg {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+ol {
+  @extend .ps-0;
+
+  li {
+    margin-left: 1rem;
+    @extend .fw-normal;
+  }
+}

@@ -1,0 +1,65 @@
+.social-icons {
+	// @extend .row;
+	// @extend .align-items-center;
+
+	// li {
+	// 	@extend .col;
+
+	// 	* {
+	// 		@include font-size(15px);
+
+	// 		@include media-breakpoint-up(lg) {
+	// 			@include font-size(21px);
+	// 		}
+	// 	}
+
+	// 	a {
+	// 		@extend .d-block;
+	// 		width: 30px;
+	// 		height: 30px;
+	// 		line-height: 26px;
+	// 		text-align: center;
+
+	// 		@include media-breakpoint-up(lg) {
+	// 			width: 40px;
+	// 			height: 40px;
+	// 			line-height: 40px;
+	// 		}
+	// 	}
+	// }
+
+	// Circle Icons
+	&.icons-circle {
+		a {
+			border-radius: 50%;
+			@extend .bg-primary;
+		}
+	}
+
+	// Rounded Icons
+	&.icons-rounded {
+		li {
+			@extend .bg-primary;
+			border-radius: 0.25em;
+		}
+	}
+
+	// Square Icons
+	&.icons-square {
+		li {
+			@extend .bg-primary;
+		}
+	}
+
+	// Diamond Icons
+	&.icons-diamond {
+		li {
+			transform: rotate(45deg);
+			@extend .bg-primary;
+
+			svg {
+				transform: rotate(-45deg);
+			}
+		}
+	}
+}

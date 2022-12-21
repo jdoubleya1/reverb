@@ -1,0 +1,517 @@
+{
+    "key": "group_5fbec31fee01a",
+    "title": "Clone : Button Group",
+    "fields": [
+        {
+            "key": "field_602ef14b488b4",
+            "label": "Button(s)",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5fbec7a657f8e",
+            "label": "Button Group",
+            "name": "button_group",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hide-label",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "layout": "block",
+            "acfe_seamless_style": 1,
+            "acfe_group_modal": 0,
+            "acfe_settings": "",
+            "sub_fields": [
+                {
+                    "key": "field_6245eda6887fa",
+                    "label": "Button Wrap",
+                    "name": "button_wrap",
+                    "type": "select",
+                    "instructions": "Which breakpoint should the buttons start to wrap. Default is the SM breakpoint.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "choices": {
+                        "d-block": "XS",
+                        "d-sm-block": "SM",
+                        "d-md-block": "MD",
+                        "d-lg-block": "LG",
+                        "d-xl-block": "XL",
+                        "d-xxl-block": "XXL"
+                    },
+                    "default_value": "d-sm-block",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "acfe_settings": "",
+                    "acfe_validate": "",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_6245ee54887fb",
+                    "label": "Button Wrapper Class",
+                    "name": "button_wrapper_class",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "acfe_settings": "",
+                    "acfe_validate": ""
+                },
+                {
+                    "key": "field_5fbec32b3eead",
+                    "label": "Button(s)",
+                    "name": "buttons",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "hide-label",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "acfe_repeater_stylised_button": 1,
+                    "collapsed": "field_5fbec32000c0b",
+                    "min": 0,
+                    "max": 2,
+                    "layout": "table",
+                    "button_label": "Add Button",
+                    "acfe_settings": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_615c8b411ceff",
+                            "label": "Type",
+                            "name": "button_type",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "choices": {
+                                "a": "a",
+                                "modal": "modal"
+                            },
+                            "default_value": "a",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "acfe_settings": "",
+                            "acfe_validate": "",
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5fbec32000c0b",
+                            "label": "Style",
+                            "name": "button_style",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "choices": {
+                                "btn btn-primary": "Primary",
+                                "btn btn-secondary": "Secondary",
+                                "btn btn-success": "Success",
+                                "btn btn-danger": "Danger",
+                                "btn btn-warning": "Warning",
+                                "btn btn-info": "Info",
+                                "btn btn-light": "Light",
+                                "btn btn-dark": "Dark",
+                                "btn btn-link": "Link",
+                                "btn btn-elegant": "Elegant",
+                                "btn btn-unique": "Unique",
+                                "btn btn-pink": "Pink",
+                                "btn btn-purple": "Purple",
+                                "btn btn-deep-purple": "Deep Purple",
+                                "btn btn-indigo": "Indigo",
+                                "btn btn-light-blue": "Light Blue",
+                                "btn btn-cyan": "Cyan",
+                                "btn btn-dark-green": "Dark Green",
+                                "btn btn-light-green": "Light Green",
+                                "btn btn-yellow": "Yellow",
+                                "btn btn-amber": "Amber",
+                                "btn btn-deep-orange": "Deep Orange",
+                                "btn btn-brown": "Brown",
+                                "btn btn-blue-grey": "Blue Grey",
+                                "btn btn-mdb-color": "MDB Color",
+                                "btn peach-gradient": "Peach Gradient",
+                                "btn purple-gradient": "Purple Gradient",
+                                "btn blue-gradient": "Blue Gradient",
+                                "btn aqua-gradient": "Aqua Gradient",
+                                "btn btn-outline-primary waves-effect": "Outline Primary",
+                                "btn btn-outline-default waves-effect": "Outline Default",
+                                "btn btn-outline-secondary waves-effect": "Outline Secondary",
+                                "btn btn-outline-success waves-effect": "Outline Success",
+                                "btn btn-outline-info waves-effect": "Outline Info",
+                                "btn btn-outline-warning waves-effect": "Outline Warning",
+                                "btn btn-outline-danger waves-effect": "Outline Danger",
+                                "btn btn-primary btn-rounded": "Rounded Primary",
+                                "btn btn-default btn-rounded": "Rounded Default",
+                                "btn btn-secondary btn-rounded": "Rounded Secondary",
+                                "btn btn-success btn-rounded": "Rounded Success",
+                                "btn btn-info btn-rounded": "Rounded Info",
+                                "btn btn-warning btn-rounded": "Rounded Warning",
+                                "btn btn-danger btn-rounded": "Rounded Danger",
+                                "btn btn-outline-primary btn-rounded waves-effect": "Rounded Outline Primary",
+                                "btn btn-outline-default btn-rounded waves-effect": "Rounded Outline Default",
+                                "btn btn-outline-secondary btn-rounded waves-effect": "Rounded Outline Secondary",
+                                "btn btn-outline-success btn-rounded waves-effect": "Rounded Outline Success",
+                                "btn btn-outline-info btn-rounded waves-effect": "Rounded Outline Info",
+                                "btn btn-outline-warning btn-rounded waves-effect": "Rounded Outline Warning",
+                                "btn btn-outline-danger btn-rounded waves-effect": "Rounded Outline Danger"
+                            },
+                            "default_value": false,
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "placeholder": "",
+                            "acfe_settings": "",
+                            "acfe_validate": "",
+                            "ajax": 0
+                        },
+                        {
+                            "key": "field_5fbec32000c15",
+                            "label": "Size",
+                            "name": "button_size",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "choices": {
+                                "btn-sm": "Small",
+                                "btn-lg": "Large"
+                            },
+                            "default_value": false,
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "placeholder": "",
+                            "ajax": 0
+                        },
+                        {
+                            "key": "field_5fbec32000c1c",
+                            "label": "Link",
+                            "name": "button_link",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "return_format": "array"
+                        },
+                        {
+                            "key": "field_6245f005f857a",
+                            "label": "Class",
+                            "name": "button_class",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "acfe_settings": "",
+                            "acfe_validate": ""
+                        },
+                        {
+                            "key": "field_615c983c8e9e7",
+                            "label": "Modal Skin Theme",
+                            "name": "modal_skin_theme",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_615c8b411ceff",
+                                        "operator": "==",
+                                        "value": "modal"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "choices": {
+                                "bg-light text-dark": "Light",
+                                "bg-dark text-light": "Dark"
+                            },
+                            "default_value": false,
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "placeholder": "",
+                            "acfe_settings": "",
+                            "acfe_validate": "",
+                            "ajax": 0
+                        },
+                        {
+                            "key": "field_615c8bbd1cf01",
+                            "label": "Modal Location",
+                            "name": "modal_location",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_615c8b411ceff",
+                                        "operator": "==",
+                                        "value": "modal"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "choices": {
+                                "modal-frame modal-top": "Top",
+                                "modal-frame modal-bottom": "Bottom",
+                                "modal-side modal-top-right": "Top Right",
+                                "modal-side modal-top-left": "Top Left",
+                                "modal-side modal-bottom-right": "Bottom Right",
+                                "modal-side modal-bottom-left": "Bottom Left",
+                                "modal-dialog-centered": "Center"
+                            },
+                            "default_value": false,
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "acfe_settings": "",
+                            "acfe_validate": "",
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_615c8c3b1cf03",
+                            "label": "Modal Size",
+                            "name": "modal_size",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_615c8b411ceff",
+                                        "operator": "==",
+                                        "value": "modal"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "choices": {
+                                "modal-sm": "Small",
+                                "modal-lg": "Large",
+                                "modal-xl": "Extra Large",
+                                "modal-fullscreen": "Fullscreen"
+                            },
+                            "default_value": false,
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "placeholder": "",
+                            "acfe_settings": "",
+                            "acfe_validate": "",
+                            "ajax": 0
+                        },
+                        {
+                            "key": "field_615c8b6e1cf00",
+                            "label": "Modal Content",
+                            "name": "modal_content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_615c8b411ceff",
+                                        "operator": "==",
+                                        "value": "modal"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0,
+                            "acfe_settings": "",
+                            "acfe_validate": ""
+                        },
+                        {
+                            "key": "field_615c98228e9e6",
+                            "label": "Modal Body Class",
+                            "name": "modal_body_class",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_615c8b411ceff",
+                                        "operator": "==",
+                                        "value": "modal"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "acfe_settings": "",
+                            "acfe_validate": ""
+                        },
+                        {
+                            "key": "field_615c96922b22d",
+                            "label": "Modal ID",
+                            "name": "unique_id",
+                            "type": "unique_id",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_615c8b411ceff",
+                                        "operator": "==",
+                                        "value": "modal"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "acfe_settings": "",
+                            "acfe_validate": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "acfe_display_title": "Button Group",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_permissions": "",
+    "acfe_form": 1,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1649977247
+}
